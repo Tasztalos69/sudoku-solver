@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from sudoku import solve, pb
 
 

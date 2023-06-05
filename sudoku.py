@@ -3,7 +3,7 @@ from time import sleep
 
 
 def pb(board: [[int]]):
-    os.system("cls")
+    os.system("cls" if os.name == 'nt' else 'clear')
     for i, r in enumerate(board):
         for j, c in enumerate(r):
             val = "·" if c is None else c
