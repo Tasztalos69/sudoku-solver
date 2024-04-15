@@ -1,0 +1,28 @@
+[project]
+name = "sudoku-solver"
+version = "1.1.0"
+requires-python = ">=3.11"
+authors = [
+    { name = "Kiss Benedek Máté", email = "tasztalos69@gmail.com" },
+]
+description = "A basic sudoku solver"
+license = { file = "LICENSE" }
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://github.com/tasztalos69/sudoku-solver"
+Repository = "https://github.com/tasztalos69/sudoku-solver.git"
+
+[project.scripts]
+sudoku-solver = "sudoku-solver:main"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D100", "D401", "D202", "D211", "D213", "T201", "INP001", "PLR2004"]
