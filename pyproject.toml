@@ -18,11 +18,11 @@ Homepage = "https://github.com/tasztalos69/sudoku-solver"
 Repository = "https://github.com/tasztalos69/sudoku-solver.git"
 
 [project.scripts]
-sudoku-solver = "sudoku-solver:main"
+sudoku-solver = "sudoku_solver:main"
 
 [tool.ruff]
 line-length = 120
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["D100", "D401", "D202", "D211", "D213", "T201", "INP001", "PLR2004"]
+ignore = ["D100", "D104", "D401", "D202", "D211", "D213", "T201", "INP001", "PLR2004"]
